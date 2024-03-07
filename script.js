@@ -81,11 +81,123 @@ kjdnfvkjgrn */
 
 // funksiya
 
-function Hesabla( a, b){
+// function Hesabla( a, b){
 
-const z = a+b;
-console.log(z)
-}
-// NaN not a number
+// const z = a+b;
+// console.log(z)
+// }
+// // NaN not a number
 
-Hesabla(10, 12)
+// Hesabla(10, 12)
+
+
+
+// array methods
+
+// const fruits = ["apple", "banana", "melon"];
+
+// // pop arrayde en sonuncu elementi silir
+// fruits.pop();
+
+
+// // push elementi en sona elave edir
+// fruits.push("watermelon");
+
+// // index metodu ile istenilen yere elave etmek olar
+// fruits[3] = "lemon";
+// console.log(fruits);
+
+// // shift arrayin evvelindeki elementi silir
+// fruits.shift();
+// console.log(fruits)
+
+// // unshift arrayin evveline element elave edir
+// fruits.unshift("peach");
+// console.log(fruits);
+
+// // delete istenilen elementi silir yerini bos saxlayir
+// // delete fruits[2];
+// // console.log(fruits);
+
+// // lenght elementlerin sayi
+// console.log(fruits.length);
+
+// // splice
+// fruits.splice(2, 1, "apricot")
+// console.log(fruits);
+
+// // slice
+// const a = fruits.slice(1);
+// console.log(a);
+
+// // at indexle eyni mentiq
+// console.log(fruits.at(2))
+
+// // concat
+// const girls = ["Lale", "Aylin", "Esma"];
+// const boys = ["Revan", "Cingiz"];
+// const students = girls.concat(boys);
+// console.log(students)
+
+// // join
+
+// const b = girls.join("a");
+// console.log(b)
+
+// // includes
+// console.log(fruits.includes("tomato"))
+
+
+// // sort
+// const array1 = ["aile","sevinc", "benna" ];
+// array1.sort();
+// array1.reverse();
+// console.log(array1);
+
+
+// const numbers = [1, 56, 123, 42];
+// numbers.sort(
+//     function(a,b){
+//        return b-a
+//     }
+// );
+// console.log(numbers)
+
+
+// if else 
+
+// const a =5;
+
+// if(a%2==0){
+//     console.log( a +" cut ededdir")
+// }
+// else{
+//     console.log("tek ededdir")
+// }
+
+
+// ucbucagin qurulmasi ve novunun mueyyenlesdirilmesi
+
+// const a=4;
+// const b=3;
+// const c =3;
+
+// if(a+b>c && a+c>b && b+c>a){
+//       if(a==b && a==c && b==c){
+//         console.log("beraberterefli ucbucaq")
+//       }
+//       else if(a==b || b==c || a==c){
+//         console.log("beraberyanli ucbucaq")
+//       }
+//       else{
+//         console.log("muxtelifterefli ucbucaq")
+//       }
+// }
+
+// else{
+//     console.log("bele ucbucaq movcud deyil")
+// }
+
+
+
+
