@@ -8,13 +8,14 @@
 // console.log(a)
 
 
-const element1 = document.getElementsByClassName("metn");
+// const element1 = document.getElementsByClassName("metn");
 
-element1[0].addEventListener("click", function(){
+// element1[0].addEventListener("click", function(){
    
-    alert("salam")
+//     alert("salam")
 
-} )
+// } )
 
 // hoisting funksiyanin birinci cagirilib sonra yaradilmasi
+
 

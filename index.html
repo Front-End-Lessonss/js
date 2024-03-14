@@ -4,14 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
-    
+
+    <style>
+        body{
+            margin:0;
+        }
+     .navbar{
+        padding: 7px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+     }
+     
+     .nav-links a{
+         text-decoration: none;
+         font-size:20px;
+         margin-right:10px;
+     }
+     .fa-bars{
+        cursor: pointer;
+        font-size:20px;
+        display: none;
+
+     }
+
+
+     .overlay-menu{
+        position: fixed;
+        width:0;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        z-index:1;
+        overflow-y: hidden;
+        transition: all 0.8s;
+     }
+     .overlay-menu .overlay-links{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%
+     }
+     .overlay-links a{
+        text-decoration: none;
+        color:#fff;
+        font-size:40px;
+     }
+     .fa-xmark{
+        color:#fff;
+        font-size: 30px;
+        position: absolute;
+        top:30px;
+        right:40px;
+        cursor: pointer;
+     }
+
+
+     @media(max-width:750px){
+        .nav-links{
+            display: none;
+        }
+        .fa-bars{
+            display: block;
+        }
+     }
+
+    </style>
+
+
+
 </head>
 <body>
+
+    <div class="overlay-menu">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="overlay-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </div>
+
+
+    <div class="navbar">
+    <div class="logo">
+        <h1>LOGO</h1>
+    </div>
+
+    <i class="fa-solid fa-bars"></i>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+    </div>
     
-<h1></h1>
-
-<p class="metn">salam</p>
 
 
 
@@ -30,7 +128,7 @@
 
 
 
-
+    <script src="./overlay-menu.js"></script>
     <script src="./dom.js"></script>
     <script src="./script.js"></script>
 </body>
