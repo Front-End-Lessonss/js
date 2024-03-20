@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            border-radius:50%;
+            margin-right:15px;
+            cursor:pointer;
+            padding:5px 11px
+        }
+        .active{
+            background-color: rgb(33, 97, 137);
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="pagination-buttons">
+       
+        <button >1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+
+
+
+    </div>
+
+
+   
+
+    <script>
+       const buttons = document.querySelectorAll("button");
+
+       buttons.forEach(button => {
+          button.addEventListener("click", function(){
+            document.querySelector(".active")?.classList.remove("active")
+            button.classList.toggle("active");
+          })
+       });
+
+
+
+    // const buton1 = document.getElementsByTagName("button")[0]
+    // const buton2 = document.getElementsByTagName("button")[1]
+    // const buton3 = document.getElementsByTagName("button")[2]
+    // const buton4 = document.getElementsByTagName("button")[3]
+    // const buton5 = document.getElementsByTagName("button")[4]
+    // const buton6 = document.getElementsByTagName("button")[5]
+     
+     
+    // buton1.addEventListener("click", function(){
+    //     buton1.classList.toggle("active")
+    // })
+
+    // buton2.addEventListener("click", function(){
+    //     buton2.classList.toggle("active")
+    // })
+
+    // buton3.addEventListener("click", function(){
+    //     buton3.classList.toggle("active")
+    // })
+
+    // buton4.addEventListener("click", function(){
+    //     buton4.classList.toggle("active")
+    // })
+
+    // buton5.addEventListener("click", function(){
+    //     buton5.classList.toggle("active")
+    // })
+
+    // function addActive(){
+       
+    //     buton6.classList.toggle("active")
+
+    // }
+
+    // buton6.addEventListener("click", addActive)
+
+
+ 
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
