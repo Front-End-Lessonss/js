@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide .card {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            
+          </div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+          <div class="swiper-slide"><img src="https://source.unsplash.com/random" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 60,
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: false,
+        //   },
+        autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+
+    //   responsivlik ucun breakpointler
+
+    breakpoints: {
+        300:{
+          slidesPerView: 1,
+          spaceBetween: 0,  
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+        });
+      </script>
+
+
+</body>
+</html>
